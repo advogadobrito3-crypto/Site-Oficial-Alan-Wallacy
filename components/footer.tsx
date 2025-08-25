@@ -1,30 +1,30 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Mail, MapPin, Scale } from "lucide-react"
 
 export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="flex justify-center mb-8">
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex justify-start mb-4">
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo.png"
               alt="Dr. Alan Wallacy - Advogado"
-              width={200}
-              height={45}
-              className="h-10 w-auto brightness-0 invert"
+              width={280}
+              height={63}
+              className="h-14 w-auto brightness-0 invert"
             />
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contato</h3>
-            <div className="space-y-3">
+            <h3 className="text-lg font-semibold mb-3">Contato</h3>
+            <div className="space-y-2">
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5" />
+                <Scale className="w-5 h-5" />
                 <span>(85) 98902-5764</span>
               </div>
               <div className="flex items-center space-x-3">
@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Areas */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Áreas de Atuação</h3>
+            <h3 className="text-lg font-semibold mb-3">Áreas de Atuação</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/civil" className="hover:text-secondary transition-colors">
@@ -72,8 +72,8 @@ export default function Footer() {
 
           {/* Important Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Informações Importantes</h3>
-            <p className="text-sm leading-relaxed mb-4">
+            <h3 className="text-lg font-semibold mb-3">Informações Importantes</h3>
+            <p className="text-sm leading-relaxed mb-3">
               <strong>Importante:</strong> A análise inicial do caso serve para avaliar a admissibilidade e a
               viabilidade de uma ação judicial.
             </p>
@@ -91,7 +91,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm">
+        <div className="border-t border-primary-foreground/20 mt-6 pt-6 text-center text-sm">
           <p>© 2025 Alan Wallacy Alves de Brito Souza – Advogado | OAB/CE 46083. Todos os direitos reservados.</p>
         </div>
       </div>
